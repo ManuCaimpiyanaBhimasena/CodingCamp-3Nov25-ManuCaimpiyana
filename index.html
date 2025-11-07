@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header  -->
+    <header class="head">
+        <!-- logo -->
+        <div class="logo">
+            <a href="#"><img src="Assets/logo.png" alt="" height="64px"></a>
+        </div>
+        <!-- navbar -->
+        <nav class="navBar">
+            <a href="#homePage">Home</a>
+            <a href="#aboutmePage">About Me</a>
+            <a href="#portofolioPage">Portofolio</a>
+            <a href="#messageusPage">Message Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- main  -->
+    <main>
+
+        <!-- Home Page -->
+        <section id="homePage">
+            <h3 id="msg">Hello, welcome to my website </h3>
+            <h4>this is my personal website</h4>
+        </section>
+        
+        <!-- OurProfile Page -->
+         <section id="aboutmePage">
+            <h3>Hello, im Manu Caimpiyana Bhimasena. I born at 11 August 2010, on 2025 im a 15 years old boy that become one of the student in wikrama vocational high school, Majoring PPLG or RPL.</h3>
+            
+            <br><br><br><br>
+            <div class="kiri">
+                <h1>Educational background</h1>
+                <ul>
+                    <li>Sd islam Ibnu Hajar</li>
+                    <li>Smp Pesat</li>
+                    <li>Smk Wikrama Bogor</li>
+                </ul>
+            </div>
+            <div class="kanan">
+                <h1>My skills</h1>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Basic Flutter</li>
+                    <li>Basic C#</li>
+                </ul>
+            </div>
+            <div class="kiri-2">
+                <h1>My Hobby</h1>
+                <ul>
+                    <li>Playing guitar</li>
+                    <li>Playing games</li>
+                    <li>listening to music</li>
+                </ul>
+            </div>
+
+         </section>
+
+         <!-- portofolio Page  -->
+          <section id="portofolioPage">
+                <h1>Berikut ialah beberapa sertifikat saya :</h1>
+                
+                <div class="grid">
+                    <div><img src="Assets/sertif1.jpg" alt="" height="250px"></div>
+                    <div><img src="Assets/sertif2.png" alt="" height="250px"></div>
+                    <div><img src="Assets/sertif3.png" alt="" height="250px"></div>
+                    <div><img src="Assets/sertif4.png" alt="" height="250px"></div>
+                    <div><img src="Assets/sertif5.png" alt="" height="250px"></div>
+                    <div><img src="Assets/sertif6.png" alt="" height="250px"></div>
+                </div>
+          </section>
+
+          <!-- Message Us Page -->
+           <section id="messageusPage">
+
+            <h1>Send me a message!!</h1>
+            <form>
+                
+                <label>Nama :</label>
+                <input type="text" id="username" placeholder="Enter your name" required><br><br>
+
+                <label>Email :</label>    
+                <input type="email" id="email" placeholder="enter your email" required><br><br>
+
+                <label>jenis kelamin :</label>
+                <input type="radio" name="gender" id="gender" value="Men" required>Men
+                <input type="radio" name="gender" id="gender" value="Women" required>Women <br><br>
+
+
+                <label>Message : </label><br>
+                <textarea id="message" cols="30" rows="10" placeholder="Send your message" required></textarea><br><br>
+
+                <button onclick="validateFormData()">Submit</button>
+            </form>
+
+            <div id="output"></div>
+
+           </section>
+
+    </main>
+
+    <hr>
+
+    <!-- footer  -->
+    <footer>
+        <h5>© 2025 Manu Caimpiyana. All rights reserved.</h5>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/Script.js"></script>
+</body>
+</html>
