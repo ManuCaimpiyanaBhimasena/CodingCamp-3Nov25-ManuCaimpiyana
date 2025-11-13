@@ -11,8 +11,6 @@ function welcomemsg(){
 
 
 function validateFormData(){
-
-     event.preventdefault()
     
     const name = document.getElementById('username').value;
     const email = document.getElementById('email').value;
@@ -29,4 +27,5 @@ function validateFormData(){
   form.reset();
 };
   
+
 
